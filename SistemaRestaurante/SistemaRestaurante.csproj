@@ -61,6 +61,12 @@
     </Compile>
     <Compile Include="LIBRERIAS\Desencryptacion.cs" />
     <Compile Include="LIBRERIAS\Encryptacion.cs" />
+    <Compile Include="MODULOS\Mesas_Salones\AgregarMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\Mesas_Salones\AgregarMesa.Designer.cs">
+      <DependentUpon>AgregarMesa.cs</DependentUpon>
+    </Compile>
     <Compile Include="MODULOS\Mesas_Salones\ConfigurarMesas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CONEXION\ConexionManual.resx">
       <DependentUpon>ConexionManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\Mesas_Salones\AgregarMesa.resx">
+      <DependentUpon>AgregarMesa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MODULOS\Mesas_Salones\ConfigurarMesas.resx">
       <DependentUpon>ConfigurarMesas.cs</DependentUpon>
@@ -109,6 +118,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lupa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mesa_vacia.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
